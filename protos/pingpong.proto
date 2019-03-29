@@ -1,0 +1,19 @@
+//to recompile this proto run
+//python -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/example.proto
+syntax = "proto3";
+
+//my service is called PingPongService
+service PingPongService {
+    //an example of getting a feature
+    rpc ping (Ping) returns (Pong) {}
+}
+
+message Ping {
+    //The Ping message
+    int32 count = 1;
+}
+
+message Pong {
+    //The Pong message
+    int32 count = 1;
+}
