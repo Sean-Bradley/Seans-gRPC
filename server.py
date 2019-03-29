@@ -22,7 +22,7 @@ class Listener(pingpong_pb2_grpc.PingPongServiceServicer):
 
 
 def serve():
-    server = grpc.server(futures.ThreadPoolExecutor(max_workers=100))
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=1))
     pingpong_pb2_grpc.add_PingPongServiceServicer_to_server(Listener(), server)
     server.add_insecure_port("[::]:9999")
     server.start()
