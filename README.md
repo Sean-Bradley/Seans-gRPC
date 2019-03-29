@@ -1,5 +1,6 @@
 # Seans-gRPC
 
+My gRPC experiments
 
 ## setup
 ```bash
