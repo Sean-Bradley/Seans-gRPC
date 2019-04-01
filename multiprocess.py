@@ -1,12 +1,12 @@
+"""A module for runnin the client an N processes"""
 from multiprocessing import Process
-import client as client
+import client
 
 if __name__ == "__main__":
-    count = 2
-    processes = {}
-    for x in range(count):
-        processes[x] = Process(target=client.run)
+    COUNT = 2
+    PROCESSES = {}
+    for x in range(COUNT):
+        PROCESSES[x] = Process(target=client.run)
 
-    for x in range(count):
-        processes[x].start()
-
+    for x in range(COUNT):
+        PROCESSES[x].start()
