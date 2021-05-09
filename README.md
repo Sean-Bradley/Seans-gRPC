@@ -20,6 +20,8 @@ python -m server
 python -m client
 ```
 
+While the server and 1 or more clients are running, the clients will send small messages to the server, the server will periodically log to the console how many incoming messages it received and responded to. The clients will also periodically log to the console how many they sent and got a response for. 
+
 ## Start Multiple clients in sperate processes
 ```bash
 python -m multiprocess
