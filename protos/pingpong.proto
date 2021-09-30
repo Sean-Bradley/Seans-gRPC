@@ -1,5 +1,5 @@
 //to recompile this proto run
-//python -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/example.proto
+//python -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/pingpong.proto
 syntax = "proto3";
 
 //my service is called PingPongService
